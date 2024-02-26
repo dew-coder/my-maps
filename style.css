@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: antiquewhite;
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#map2 {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+#btn {
+    width: 60px;
+    padding: 5px 7px;
+    border-radius: 7px;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 15px;
+    left: 25px;
+}
+
+#bar {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+}
+
+#bar1 {
+    height: 0px;
+}
+
+#bar2 {
+    color: greenyellow;
+    display: flex;
+    gap: 5px;
+    font-size: 30px;
+    border-right: 5px solid rgb(255, 255, 255);
+    padding: 10px;
+}
+
+#bar3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80%;
+    gap: 25px;
+    margin-left: 10px;
+}
+
+#bar3-img-div {
+    height: 50px;
+    display: flex;
+    gap: 15px;
+}
+
+#bar3-img-div img {
+    height: 100%;
+    border-radius: 10px;
+}
+
+#bar3-img-div div h3 {
+    color: white;
+    font-weight: 400;
+}
+
+#bar3-social-div {
+    display: flex;
+    gap: 25px;
+}
+
+#bar3-social-div div {
+    border-radius: 50%;
+    border: solid 2px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    padding: 7px;
+}
+
+@media screen and (max-width: 900px) {
+    #bar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+        gap: 10px;
+    }
+    #bar2{
+        border-right: none;
+    }
+    #bar3 {
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: space-between; */
+        gap: 50px;
+        /* margin-left: 0; */
+    }
+}
