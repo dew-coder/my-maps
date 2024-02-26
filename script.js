@@ -16,7 +16,7 @@ function GetMap() {
                 alert('start point is: ' + e.location.latitude + ', ' + e.location.longitude);
             } else if (endPoint === null) {
                 endPoint = new Microsoft.Maps.Directions.Waypoint({ location: e.location });
-                alert('snd point is: ' + e.location.latitude + ', ' + e.location.longitude);
+                alert('end point is: ' + e.location.latitude + ', ' + e.location.longitude);
                 calculateRoute(startPoint, endPoint);
             }
         });
